@@ -10,7 +10,6 @@ function createTag(nazwaTag, nazwaClass, text) {
                 console.log(`Oto nowy obiekt, który zmienimy na html, czyli tag ${this.nazwaTag} o klasie ${this.nazwaClass} z tekstem ${this.text}`)
             }
     
-    
         }
     
     } 
