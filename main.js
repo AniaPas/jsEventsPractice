@@ -10,7 +10,7 @@ const foto =
     {
       albumId: 1,
       id: 2,
-      titl: "reprehenderit est deserunt velit ipsam",
+      title: "reprehenderit est deserunt velit ipsam",
       url: "https://via.placeholder.com/600/771796",
       thumbnailUrl: "https://via.placeholder.com/150/771796"
     },
@@ -87,7 +87,7 @@ function createTag(nazwaTag, nazwaClass, text) {
     }
     
     const zobaczymyCzyWyjdzie = createTag('h1',  'los', 'kos')
-    console.log(createTag('h1', 'lalala', 'ania'), 'wydzieOrNot')
+    console.log(createTag('h1', 'lalala', 'ania'), 'wyjdzieOrNot')
 
     //2
     const showImgBtn = document.getElementById('showImg')
@@ -97,10 +97,11 @@ function createView(){
     const h1Photo = document.createElement('h1')
     const divPhoto = document.createElement('div')
     const divImg= document.createElement('img') 
-    divImg.src = item.url
+    divPhoto.classList.add('photoStyle')
+    divImg.src = item.thumbnailUrl
     h1Photo.innerHTML = item.title
     divPhoto.appendChild(h1Photo)
-    divPhoto.appendChild(divImg)
+    h1Photo.appendChild(divImg)
     console.log(app)
     app.appendChild(divPhoto)
 })
